@@ -1,0 +1,39 @@
+.el-icon-pie-chart {
+  margin-left: 10px;
+}
+.center_text {
+  width: 90%;
+  background-color: white;
+  margin: 20px auto 40px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px 5px rgba(17, 150, 196, 0.35);
+}
+.center_text .index-img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 25px;
+  transition: all 0.6s;
+}
+.center_text .index-img img {
+  width: 100%;
+  border-radius: 25px;
+}
+.center_text .index-img:hover {
+  transform: scale(1.05);
+}
+.vue-text {
+  margin: 0 30px;
+  color: #666666;
+}
+.vue-text span {
+  font-size: 14px;
+}
+.vue-text .explain {
+  font-weight: 800;
+}
+.bottom-text {
+  font-size: 12px;
+  color: #98a6ad;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=Article.css.map */

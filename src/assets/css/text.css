@@ -1,0 +1,25 @@
+.center_text {
+  width: 90%;
+  background-color: white;
+  margin: 20px auto 40px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px 5px rgba(17, 150, 196, 0.35);
+}
+.center_text .index-img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 25px;
+  transition: all 0.6s;
+}
+.center_text .index-img img {
+  width: 100%;
+  border-radius: 25px;
+}
+.box-text {
+  color: #58666e;
+  padding: 20px;
+}
+.box-text h4 {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=text.css.map */

@@ -1,22 +1,35 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+const Index = () => import('@/views/index')
+const Home = () => import('@/views/home/Home')
+const File = () => import('@/views/file/File')
+const Video = () => import('@/views/video/Video')
+const About = () => import('@/views/about/About')
+const Article = () => import('@/views/home/article/Article')
+// 文章路由
+const VueArticle = () => import('@/views/article/VueArticle')
+const Interview = () => import('@/views/article/Interview')
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: Index,
+    redirect: '/home',
+    children: [
+      { path: '/home', component: Home },
+      { path: '/file', component: File },
+      { path: '/about', component: About },
+      { path: '/video', component: Video },
+      { path: '/html', component: Video },
+      { path: '/css', component: Video },
+      { path: '/js', component: Video },
+      { path: '/vue', component: Video },
+      { path: '/article', component: Article },
+      { path: '/vueArticle/:id', component: VueArticle },
+      { path: '/interview/:id', component: Interview }
+    ]
   }
 ]
 
